@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const isChecked = e.target.checked;
     const lis = ul.children;
     if (isChecked) {
-      for (let i = 1; i < lis.length; i++) {
+      for (let i = 0; i < lis.length; i++) {
         let li = lis[i];
         if (li.className === 'responded'){
           li.style.display = '';
